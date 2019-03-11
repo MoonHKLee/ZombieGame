@@ -1,0 +1,182 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1073741824 bytes for Failed to commit area from 0x000001105e000000 to 0x000001109e000000 of length 1073741824.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/open/src/hotspot/os/windows/os_windows.cpp:3221), pid=18568, tid=21532
+#
+# JRE version:  (10.0.2+13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13, mixed mode, aot, tiered, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xms1024m -Xmx1024m -Xms1024m -Xmx65536m -Dfile.encoding=MS949 PlayZombieGame
+
+Host: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 12 cores, 15G,  Windows 10 , 64 bit Build 16299 (10.0.16299.431)
+Time: Sun Sep 02 02:18:33 2018 ¢¥eCN©öI¡¾©ö C¡ÍA¨ª¨öA elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000011044d13800):  JavaThread "Unknown thread" [_thread_in_vm, id=21532, stack(0x00000006dfb00000,0x00000006dfc00000)]
+
+Stack: [0x00000006dfb00000,0x00000006dfc00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5a01a9]
+V  [jvm.dll+0x6bcf31]
+V  [jvm.dll+0x6be126]
+V  [jvm.dll+0x6be7b3]
+V  [jvm.dll+0x234978]
+V  [jvm.dll+0x59dac4]
+V  [jvm.dll+0x592825]
+V  [jvm.dll+0x2f632b]
+V  [jvm.dll+0x2f6295]
+V  [jvm.dll+0x2f6172]
+V  [jvm.dll+0x2f8366]
+V  [jvm.dll+0x344293]
+V  [jvm.dll+0x3449a6]
+V  [jvm.dll+0x344393]
+V  [jvm.dll+0x2c4628]
+V  [jvm.dll+0x2c5771]
+V  [jvm.dll+0x69d1db]
+V  [jvm.dll+0x69e9fc]
+V  [jvm.dll+0x3519e9]
+V  [jvm.dll+0x6856a2]
+V  [jvm.dll+0x3ba0c3]
+V  [jvm.dll+0x3bc261]
+C  [javaw.exe+0x3541]
+C  [javaw.exe+0xe1cf]
+C  [javaw.exe+0xe376]
+C  [KERNEL32.DLL+0x11fe4]
+C  [ntdll.dll+0x6cb31]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000011044b17620, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000011044d2b800 GCTaskThread "GC Thread#0" [stack: 0x00000006dfc00000,0x00000006dfd00000] [id=21812]
+  0x0000011044d2d000 GCTaskThread "GC Thread#1" [stack: 0x00000006dfd00000,0x00000006dfe00000] [id=21940]
+  0x0000011044d30800 GCTaskThread "GC Thread#2" [stack: 0x00000006dfe00000,0x00000006dff00000] [id=23260]
+  0x0000011044d34000 GCTaskThread "GC Thread#3" [stack: 0x00000006dff00000,0x00000006e0000000] [id=23072]
+  0x0000011044d3c800 GCTaskThread "GC Thread#4" [stack: 0x00000006e0000000,0x00000006e0100000] [id=9472]
+  0x0000011044d3e800 GCTaskThread "GC Thread#5" [stack: 0x00000006e0100000,0x00000006e0200000] [id=23140]
+  0x0000011044d38800 GCTaskThread "GC Thread#6" [stack: 0x00000006e0200000,0x00000006e0300000] [id=23360]
+  0x0000011044d3d000 GCTaskThread "GC Thread#7" [stack: 0x00000006e0300000,0x00000006e0400000] [id=23200]
+  0x0000011044d3c000 GCTaskThread "GC Thread#8" [stack: 0x00000006e0400000,0x00000006e0500000] [id=16668]
+  0x0000011044d39000 GCTaskThread "GC Thread#9" [stack: 0x00000006e0500000,0x00000006e0600000] [id=22252]
+  0x0000011044d8a000 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000006e0600000,0x00000006e0700000] [id=7132]
+  0x0000011044d3a000 ConcurrentGCThread "G1 Conc#0" [stack: 0x00000006e0700000,0x00000006e0800000] [id=23492]
+  0x0000011044d3e000 ConcurrentGCThread "G1 Conc#1" [stack: 0x00000006e0800000,0x00000006e0900000] [id=11608]
+  0x0000011044d3a800 ConcurrentGCThread "G1 Conc#2" [stack: 0x00000006e0900000,0x00000006e0a00000] [id=23224]
+
+[error occurred during error reporting (printing all threads), id 0xe0000002]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000011044d0ff00] Heap_lock - owner thread: 0x0000011044d13800
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff7d2f10000 - 0x00007ff7d2f4e000 	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe
+0x00007ffb14c90000 - 0x00007ffb14e70000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffb146c0000 - 0x00007ffb1476e000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffb11ed0000 - 0x00007ffb12136000 	C:\Windows\System32\KERNELBASE.dll
+0x000000006c6c0000 - 0x000000006c9db000 	C:\Program Files\Norton Security\NortonData\22.11.1.5\Definitions\IPSDefs\20180831.061\IPSEng64.dll
+0x00007ffb14290000 - 0x00007ffb14331000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffb14bc0000 - 0x00007ffb14c5d000 	C:\Windows\System32\msvcrt.dll
+0x00007ffb141b0000 - 0x00007ffb1420b000 	C:\Windows\System32\sechost.dll
+0x00007ffb12410000 - 0x00007ffb1252f000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffb12270000 - 0x00007ffb12278000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffb12280000 - 0x00007ffb1240f000 	C:\Windows\System32\USER32.dll
+0x00007ffb12140000 - 0x00007ffb12160000 	C:\Windows\System32\win32u.dll
+0x00007ffb12c90000 - 0x00007ffb12cb8000 	C:\Windows\System32\GDI32.dll
+0x00007ffb11890000 - 0x00007ffb11a23000 	C:\Windows\System32\gdi32full.dll
+0x00007ffb11e30000 - 0x00007ffb11ecb000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffb11ab0000 - 0x00007ffb11ba5000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffb08b70000 - 0x00007ffb08dd9000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.16299.611_none_15c7d8029365981f\COMCTL32.dll
+0x00007ffb12890000 - 0x00007ffb12b97000 	C:\Windows\System32\combase.dll
+0x00007ffb09920000 - 0x00007ffb0992a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffb11a30000 - 0x00007ffb11aa2000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffb145c0000 - 0x00007ffb145ed000 	C:\Windows\System32\IMM32.DLL
+0x00007ffaf1e60000 - 0x00007ffaf1f4f000 	C:\Program Files\Java\jre-10.0.2\bin\msvcr120.dll
+0x00007ffaf9250000 - 0x00007ffaf92f6000 	C:\Program Files\Java\jre-10.0.2\bin\msvcp120.dll
+0x000000006c9e0000 - 0x000000006d450000 	C:\Program Files\Java\jre-10.0.2\bin\server\jvm.dll
+0x00007ffb0dbe0000 - 0x00007ffb0dbe9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffb12c20000 - 0x00007ffb12c8c000 	C:\Windows\System32\WS2_32.dll
+0x00007ffb0da80000 - 0x00007ffb0daa3000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffb0da20000 - 0x00007ffb0da4a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffb11090000 - 0x00007ffb110da000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffb0d070000 - 0x00007ffb0d07f000 	C:\Program Files\Java\jre-10.0.2\bin\verify.dll
+0x00007ffaff960000 - 0x00007ffaffb28000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffaff280000 - 0x00007ffaff2a9000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffb03180000 - 0x00007ffb031a7000 	C:\Program Files\Java\jre-10.0.2\bin\java.dll
+0x00007ffb03160000 - 0x00007ffb03176000 	C:\Program Files\Java\jre-10.0.2\bin\zip.dll
+0x00007ffb088c0000 - 0x00007ffb088ca000 	C:\Program Files\Java\jre-10.0.2\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jre-10.0.2\bin;C:\Windows\SYSTEM32;C:\Program Files\Norton Security\NortonData\22.11.1.5\Definitions\IPSDefs\20180831.061;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.16299.611_none_15c7d8029365981f;C:\Program Files\Java\jre-10.0.2\bin\server
+
+VM Arguments:
+jvm_args: -Xms1024m -Xmx1024m -Xms1024m -Xmx65536m -Dfile.encoding=MS949 
+java_command: PlayZombieGame
+java_class_path (initial): C:\Users\mf311\eclipse-workspace\ZombieGame\bin
+Launcher Type: SUN_STANDARD
+
+Logging:
+Log output configuration:
+#0: stdout all=warning uptime,level,tags
+#1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-10.0.2
+PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\libnvvp;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Users\mf311\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2\bin
+USERNAME=mf311
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 16299 (10.0.16299.431)
+
+CPU:total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 158 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, physical 16693624k(10093784k free), swap 47704232k(633664k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13) for windows-amd64 JRE (10.0.2+13), built on Jun 28 2018 01:57:56 by "mach5one" with MS VC++ 12.0 (VS2013)
+
+END.
